@@ -41,6 +41,40 @@ echo "$txt bonjour tout le monde <br>";
 $fruit1='kiwi';
 $fruit1='pomme';
 $fruit2='banane';
-echo $fruit1 . <br> . $fruit2;
-?>
+$fruit2.= 'Poire';
 
+//  echo $fruit1 . '<br>' . $fruit2;
+//  echo $fruit2 .'<br>';
+$html ='<h1> cours du php </h1>';
+
+
+ $html .='<h1> ajout d\un texte dans un  pargraphe </h1>';
+
+$data1='Hello';
+$data2='les terriens';
+$data3 ='mars';
+$data4 = 'plante';
+
+echo '<p>'. $data1 . ', ' . $data2  . '. '  . 'je viens du la' .' '. $data4  . ' ' . $data3 .'. </p>'; 
+
+
+
+
+?>
+<!-- 
+    $data1= 'hello';
+    $data2 = 'les terriens';
+    $data3 ='mars';
+    $data4 = 'plante' ;
+    avec les methode de concatenation ecrire la phrase dans un  pragraphe  : hello, les terriens.je viens de la palanet mars
+ -->
+ <p>
+     <?= $data1 . ', ' . $data2  . '. '  . 'je viens du la' .' '. $data4  . ' ' . $data3 . '.' ;
+
+     ?>
+ </p>
+ <?php
+ $html = '';
+ $html .= '<p>' .$data1 . ', ' .$data2;
+ $html .= '. je vien du la ' .$data4 . ' ' . $data3. '.</p>';
+ echo $html;
