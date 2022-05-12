@@ -30,19 +30,26 @@ $notes = [12,5,16,7];
 $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
 $moyenne = $sommeNotes / 4;
 // echo $moyenne;
-for($i=0; $i < count($tableau2);$i++){
+/* for($i=0; $i < count($tableau2);$i++){
     echo $tableau2[$i] . '<br>';
-}
+} */
 $fruits =['banane','kiwi','pomme','poire'];
 /* $html='.';
 for($i = 0; $i < count($fruits);$i++){
     $html .= $fruits[$i] . ',';
 }
 echo $html; */
-foreach($fruits as $value)
+/* foreach($fruits as $value)
 {
     echo $value .'<br>';
 
-}
+} */
+//construire un tableau à l'aide de la boucle fore des nombre de34 à 78
+$nombres=[];
 
+for ($i=34; $i<79; $i++)
+{
+     $nombres[]=$i;
+}
+print_r($nombres);
 echo '</pre>';
