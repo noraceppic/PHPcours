@@ -49,7 +49,12 @@ $nombres=[];
 
 for ($i=34; $i<79; $i++)
 {
-     $nombres[]=$i;
+     //$nombres[]=$i;
+     array_push($nombres,$i);
 }
+$nombres[3] = 100;
+$nombres[0]='kiwi';
 print_r($nombres);
+
+
 echo '</pre>';
