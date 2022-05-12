@@ -30,6 +30,19 @@ $notes = [12,5,16,7];
 $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
 $moyenne = $sommeNotes / 4;
 // echo $moyenne;
+for($i=0; $i < count($tableau2);$i++){
+    echo $tableau2[$i] . '<br>';
+}
+$fruits =['banane','kiwi','pomme','poire'];
+/* $html='.';
+for($i = 0; $i < count($fruits);$i++){
+    $html .= $fruits[$i] . ',';
+}
+echo $html; */
+foreach($fruits as $value)
+{
+    echo $value .'<br>';
 
+}
 
 echo '</pre>';
