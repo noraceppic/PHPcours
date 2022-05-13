@@ -149,9 +149,18 @@ echo'<pre>';
     'planete'=>['mars','terre']
     
 ]; */
-$tab= [];
+/* $tab= [];
 $tab[]=['A','B','C'];
 $tab[]=['Q','R','T'];
 $tab[]=['E','U','P','I'];
 //print_r($tab);
- echo $tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2];
+ echo $tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2]; */
+ $tab2=[
+     [0,1],
+     [
+         2,
+         [2,3]
+     ]
+     ];//afficher la valeur 3
+     echo $tab2[1][1][1];
+     
