@@ -126,7 +126,7 @@ echo $departement[27];
 $departement[29]='finistere';
 print_r($departement);
 
-/* $html= '<ul>';
+$html= '<ul>';
 foreach($departement as $key => $value);
 {
 
@@ -134,7 +134,7 @@ foreach($departement as $key => $value);
     '</li>';
 }
 $html.='</ul>';
-echo $html ; */
+echo $html ;
 
 /*  foreach($departement as $clef => $value)
  {
@@ -155,12 +155,60 @@ $tab[]=['Q','R','T'];
 $tab[]=['E','U','P','I'];
 //print_r($tab);
  echo $tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2]; */
- $tab2=[
+ /* $tab2=[
      [0,1],
      [
          2,
          [2,3]
      ]
      ];//afficher la valeur 3
-     echo $tab2[1][1][1];
-     
+     echo $tab2[1][1][1]; */
+     $produit=[
+         ['nom'=>'chausettes' ,'prix'=> 10],
+         ['nom'=>'velo' ,'prix'=> 500],
+         ['nom'=>'carotte' ,'prix'=> 2],
+         ['nom'=>'boulon' ,'prix'=> 9],
+     ];
+
+     $tab=['nom'=>'chausettes' ,'prix'=> 10];
+
+     /* print_r($produit);
+     boucler sur le tableau produits(foreach) en affichant le nom du 
+     produit et le prix selon le model
+     'nom du produit ':'prix '€
+     dans la list ul, le nom du produit dans un h3 et le prix dans un 
+      p */
+
+    echo  '<h1>  produit </h1>';
+    echo'<ul>';
+      foreach ($produit as $key => $value) {
+         echo ' <li>';
+          echo  '<h3>'. $value['nom'] .'</h3>' . '<br>';
+          echo  '<p> ' . $value['prix']. '</p>' . '<br>' ;
+          echo'</li>';
+
+      };
+      echo'</ul>';
+       echo '</pre>';
+
+       ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Produit </h1>
+    <ul>
+        <?php  foreach ($produit as $produit?>{
+            <li>
+            </li>
+        }
+    </ul>
+</body>
+</html>
+
+       
