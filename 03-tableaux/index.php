@@ -121,8 +121,23 @@ print_r($mois);
 $departement=['14'=> 'Calvados' ,'27'=>'eure', '50'=>'manche', '76'=>'saine-martime '];
 print_r($departement);
 echo $departement[27];
+$departement[29]='brest';
+print_r($departement);
+
+$html= '<ul>';
+foreach($departement as $key => $value);
+{
+
+    $html .= '<li>' . $value .' possede le code postale suivant ' .$key ; 
+    '</li>';
+}
+$html.='</ul>';
+echo $html ;
 
 
-
+ foreach($departement as $clef => $valeur)
+ {
+     echo  $value .  '  possede le code postale suivant ' . $clef . '<br>' ;
+ }
 
 echo'<pre>';
