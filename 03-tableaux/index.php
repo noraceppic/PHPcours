@@ -109,22 +109,24 @@ print_r($planetes);
 arsort($planetes);//tris les index du tableau par ordre croissant
 print_r($planetes); */
 
-$mois=['janvier' ,'fevrier','mars','avril','mai', 'juin','juillet', 'aout','septembre','octobre','novembre','decembre'];
-echo $mois[4];
-echo('<br>');
-echo $mois[10];
-echo('<br>');
-
-$mois[3]=('Avril');
+/* $mois=['janvier' ,'fevrier','mars','avril','mai', 'juin','juillet', 'aout','septembre','octobre','novembre','decembre'];
 print_r($mois);
+echo  'la 5eme ligne du tableau est: ' .$mois[4];
+echo('<br>');
+echo  ' la valeur de l\'index 10 est: ' .$mois[10];
+echo('<br>'); */
+/* 
+//$mois[3]=('AVRIL');
+$mois[3]='AVRIL'
+;$mois[3]=strtoupper($mois[3]);
 
-$departement=['14'=> 'Calvados' ,'27'=>'eure', '50'=>'manche', '76'=>'saine-martime '];
+$departement=[14=> 'Calvados' ,27=>'eure', 50=>'manche', 76=>'saine-martime '];
 print_r($departement);
 echo $departement[27];
-$departement[29]='brest';
+$departement[29]='finistere';
 print_r($departement);
 
-$html= '<ul>';
+/* $html= '<ul>';
 foreach($departement as $key => $value);
 {
 
@@ -132,12 +134,24 @@ foreach($departement as $key => $value);
     '</li>';
 }
 $html.='</ul>';
-echo $html ;
+echo $html ; */
 
-
- foreach($departement as $clef => $valeur)
+/*  foreach($departement as $clef => $value)
  {
-     echo  $value .  '  possede le code postale suivant ' . $clef . '<br>' ;
+     echo '<p>'. ucfirst($value) .  '  possede le code postale suivant: ' . $clef .'</p>';
  }
 
 echo'<pre>';
+ */ 
+/* $tab=[
+    'voiture'=> 'ford',
+    'nombre'=> [1,2,3,4],
+    'planete'=>['mars','terre']
+    
+]; */
+$tab= [];
+$tab[]=['A','B','C'];
+$tab[]=['Q','R','T'];
+$tab[]=['E','U','P','I'];
+//print_r($tab);
+print_r ($tab[0][2].$tab[2][0].$tab[2][2].$tab[2][2].$tab[2][3].$tab[0][2]);
