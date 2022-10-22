@@ -20,3 +20,9 @@ Travail-02 :
 
 Vous trouverez une capture du resultat attendu.
  */
+
+$json1=file_get_contents("persons.json");
+$ami=json_decode($json1,true);
+echo "<h3>" . $ami[2]["friends"][1]["name"] . "</h3>";
+
+
