@@ -14,5 +14,34 @@ Travail-01 :
 | 11 | 51.8 |
  */
 
+
+echo '<table border="1">';
 $f='';
-$C=[25,03,35,11];
+$tab=[25,03,35,11];
+
+echo '<tr>';
+
+    echo'<td>°C</td>';
+    
+    echo'<td>°F</td>';
+  
+    echo '</tr>';
+    
+for ($i=0; $i < count($tab) ; $i++) 
+{ 
+    
+$f=$tab[$i]*9/5+32;
+echo'<tr>';
+
+echo '<td>'.$tab[$i].'</td>';
+
+echo '<td>'.$f.'</td>';
+
+echo '</tr>';
+
+
+
+} 
+
+echo '</table>';
+?>
