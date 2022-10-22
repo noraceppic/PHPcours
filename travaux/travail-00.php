@@ -12,3 +12,20 @@ etc ...
  */
  
 $nombres = [27,15,34,379,248,5643,81,211,999,142,300,572];
+
+
+$tab0=[27,15,34,379,248,5643,81,211,999,142,300,572];
+
+for ($i=0; $i < count($nombres) ; $i++) 
+{ echo '<ul>';
+   
+    if ($tab0[$i]%2==0 )
+     {
+        echo "<li>$nombres[$i] : est paire </li><br>";
+
+    }
+    else{
+        echo "<li>$nombres[$i] : est impaire </li><br>";
+    }
+    echo '</ul>';
+}
