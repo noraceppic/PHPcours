@@ -24,7 +24,31 @@ Vous trouverez une capture du resultat attendu.
 $json1=file_get_contents("persons.json");
 $ami=json_decode($json1,true);
 echo "<h3>" . $ami[2]["friends"][1]["name"] . "</h3>";
-echo "<p>La couleur des yeux de Ball Shaffer est : <strong>" . $json[1]["eyeColor"] . "</strong></p>";
-echo '<article>';
+echo "<p>La couleur des yeux de Ball Shaffer est : <strong>" . $ami[1]["eyeColor"] . "</strong></p>";
+
+
+ echo '<article>';
+foreach($ami as $personne ){
+    $tag='';
+    echo '<img src="' . $personne['picture'] . '"alt="picture">'.
+    '<br>';
+    echo 'Nom: ' .$personne['name'] . '<br>';
+    echo 'Age: ' .$personne['age'] . '<br>';
+    echo ' Couleur des yeux: ' .$personne['eyeColor'] . '<br>';
+    echo 'Email: ' .$personne['email'] . '<br>';
+    echo ' Fruit favori ' .$personne['favoriteFruit'] . '<br>';
+    if ($personne['isActive'] === true){ echo 'ACTIF'. '<br>'; }
+
+    $tag=implode(",", $personne['tags']);
+   echo 'Tags: '.$tag.'</p>';
+   echo '<hr>';
+}
+echo '</article>';
+    
+    
+
+
+
+
 
 
